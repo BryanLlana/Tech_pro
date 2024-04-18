@@ -13,7 +13,37 @@
 </head>
 
 <body>
-  <h1>Hola mundo</h1>
+  <header class="header">
+    <div class="container content-container">
+      <div class="image-header">
+        <picture>
+          <source
+            srcset="./img/header.avif"
+            type="image/avif"
+            sizes="1920w"
+          >
+          <source
+            srcset="./img/header.webp 1920w"
+            type="image/webp"
+            sizes="1920w"
+          >
+          <source
+            srcset="./img/header.png 1920w"
+            type="image/png"
+            sizes="1920w"
+          >
+          <img loading="lazy" decoding="async" src="./img/header.png" alt="Imagen header" width="1000" height="600">
+        </picture>
+      </div>
+
+      <div class="text-header">
+        <p class="tagline-product">Sonido profesional</p>
+        <h1 class="name-product">TechPro</h1>
+        <p class="description-product">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam doloremque commodi ipsa dolorem soluta ullam inventore! Assumenda, consequuntur, itaque ratione nemo vitae at officiis voluptate praesentium reprehenderit, aperiam quibusdam possimus.</p>
+        <p class="price-product">Desde <span>$299</span></p>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
